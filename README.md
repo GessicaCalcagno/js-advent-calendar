@@ -17,7 +17,7 @@ Creiamo il nostro **calendario dell’avvento** utilizzando HTML, CSS  e JS!
 - Aggiungiamo anche un bottone per “**resettare**” la memoria della pagina e ricominciare da capo.
 
 
-#### _______________________________________
+#### __________________________________________________
 - #### Milestone 1: Creazione della struttura del calendario.
     - Renderizzazione dinamica delle caselle:
 Utilizzo di JavaScript per generare dinamicamente le caselle del calendario, come mostrato nello screenshot.
@@ -41,3 +41,6 @@ Quando la pagina viene ricaricata, l'app deve ricordare quali caselle sono state
     - Aggiunta del pulsante "Reset":
 Aggiungere un bottone per resettare la memoria della pagina e ricominciare da capo, riportando tutte le caselle nello stato iniziale (non aperte).
 Il reset deve svuotare il localStorage e ripristinare lo stato del calendario.
+
+
+![Screenshot Calendario dell'avvento](image.png)
