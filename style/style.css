@@ -8,6 +8,7 @@
 img {
     width: 100%;
 }
+
 /* ---------------------- */
 
 /* BODY */
@@ -32,5 +33,37 @@ body {
 h1 {
     text-align: center;
 }
+/* --------------------------------- */
 
 /* CONTAINER */
+
+/* Contenitore delle caselle */
+.advent-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+/* Singola casella del calendario */
+.card {
+    width: 60px;
+    height: 60px;
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Effetto hover sulla casella */
+.card:hover {
+    filter: brightness(1.2);
+}
