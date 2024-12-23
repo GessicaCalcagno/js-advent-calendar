@@ -69,6 +69,13 @@ h1 {
     filter: brightness(1.2);
 }
 
+/* card aperta */
+.card.opened {
+    background-color: red;
+    color: white;
+    cursor: not-allowed;
+}
+
 /* MODALE */
 .hidden {
     display: none;

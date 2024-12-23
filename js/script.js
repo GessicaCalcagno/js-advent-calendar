@@ -38,6 +38,11 @@ function createCalendar() {
 
         //aggiungo l'evento al click per ogni casella
         card.addEventListener('click', () => {
+            // Se la casella è già stata aperta, non fare nulla
+            if (card.classList.contains('opened')) {
+                return;
+            }
+            //inserimento casuale tramite source
             const randomItem = source[Math.floor(Math.random() * source.length)];
 
             let content = '';
@@ -47,6 +52,9 @@ function createCalendar() {
                 content = `<p>${randomItem.text}</p>`;
             }
             showModal(content);
+
+            // Cambia lo stile della casella per indicare che è aperta
+            card.classList.add('opened');
         }
 
         );
