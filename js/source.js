@@ -2,12 +2,12 @@ const source = [
     {
         "type": "image",
         "icon": "ico-neve",
-        "url": "images/gremlins.gif"
+        "url": "./assets/images/gremlins.gif"
     },
     {
         "type": "image",
         "icon": "ico-albero",
-        "url": "images/friends.gif"
+        "url": "./assets/images/friends.gif"
     },
     {
         "type": "text",
@@ -17,7 +17,7 @@ const source = [
     {
         "type": "image",
         "icon": "ico-stella",
-        "url": "images/homealone.gif"
+        "url": "./assets/images/homealone.gif"
     },
     {
         "type": "text",
@@ -27,7 +27,7 @@ const source = [
     {
         "type": "image",
         "icon": "ico-stella",
-        "url": "images/griffin.gif"
+        "url": "./assets/images/griffin.gif"
     },
     {
         "type": "text",
@@ -42,7 +42,7 @@ const source = [
     {
         "type": "image",
         "icon": "ico-calza",
-        "url": "images/skeleton.gif"
+        "url": "./assets/images/skeleton.gif"
     },
     {
         "type": "text",
@@ -67,7 +67,7 @@ const source = [
     {
         "type": "image",
         "icon": "ico-stella",
-        "url": "images/nightmare.gif"
+        "url": "./assets/images/nightmare.gif"
     },
     {
         "type": "text",
@@ -77,7 +77,7 @@ const source = [
     {
         "type": "image",
         "icon": "ico-calza",
-        "url": "images/grinch.gif"
+        "url": "./assets/images/grinch.gif"
     },
     {
         "type": "text",
@@ -102,17 +102,17 @@ const source = [
     {
         "type": "image",
         "icon": "ico-caramella",
-        "url": "images/poltrona.gif"
+        "url": "./assets/images/poltrona.gif"
     },
     {
         "type": "image",
         "icon": "ico-caramella",
-        "url": "images/spongebob.gif"
+        "url": "./assets/images/spongebob.gif"
     },
     {
         "type": "image",
         "icon": "ico-neve",
-        "url": "images/elf.gif"
+        "url": "./assets/images/elf.gif"
     },
     {
         "type": "text",
@@ -122,6 +122,8 @@ const source = [
     {
         "type": "image",
         "icon": "ico-caramella",
-        "url": "images/dance.gif"
+        "url": "./assets/images/dance.gif"
     }
 ];
+
+export default source; // Esporta l'array come valore predefinito

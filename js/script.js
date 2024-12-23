@@ -1,24 +1,59 @@
-//acchiappo il contenitore del calendario
+import source from "./source.js";
+
+console.log(source);
+
+//Mi aggancio agli elementi del DOM ----------------
+//contenitore caselle
 const adventBox = document.querySelector('.advent-box');
-console.log(adventBox)
+//Modale
+const modal = document.querySelector('.modal');
+//contenuto del modale
+const modalContent = document.querySelector('.day-modal-text');
+const closeModal = document.querySelector('.close-modal');
+//---------------------------------------------------
 
-//Numero totale dei giorni sono 24 + 1 con messaggio unico
-const totalDays = 25;
+//FUNZIONE per mostrare il modale 
+function showModal(content) {
+    modalContent.innerHTML = content;
+    modal.classList.remove('hidden'); //se non tolgo questa classe il contenuto non appare
+}
 
-//funzione per creare il calendario
+//Funzione per chiudere il MODALE
+//alla chiusura aggiungi la classe hidden
+function hideModal() {
+    modal.classList.add('hidden');
+}
+
+//invoco la funzione al click sulla x
+closeModal.addEventListener('click', hideModal);
+
+//Creo il calendario dell'avvento
 function createCalendar() {
-    for (let day = 1; day <= totalDays; day++) {
-        //creo un div per ogni casella e quindi per ogn giorno
+    for (let day = 1; day <= 25; day++) {
+        //creo l'elemento div per ogni giorno
         const card = document.createElement('div');
-        card.classList.add('card');//devo aggiungere la classe al div 
+        card.classList.add('card');//in style CSS
+        card.textContent = day; // Mostra il numero del giorno nella casella
 
-        //inserisco il numero dei giorni all'interno della casella
-        card.textContent = day;
+        //aggiungo l'evento al click per ogni casella
+        card.addEventListener('click', () => {
+            const randomItem = source[Math.floor(Math.random() * source.length)];
 
-        //aggiungo la casella al contenitore
+            let content = '';
+            if (randomItem.type === 'image') {
+                content = `<img src="${randomItem.url}" alt='Surprise image'>`;
+            } else {
+                content = `<p>${randomItem.text}</p>`;
+            }
+            showModal(content);
+        }
+
+        );
+        // Aggiunge la casella creata al contenitore del calendario
         adventBox.appendChild(card);
     }
 }
 
-// Chiamo la funzione per creare il calendario
+
+// Chiama la funzione per creare il calendario quando la pagina viene caricata
 createCalendar();
