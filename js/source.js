@@ -1,4 +1,4 @@
-const source = [
+export const source = [
     {
         "type": "image",
         "icon": "ico-neve",
@@ -126,4 +126,4 @@ const source = [
     }
 ];
 
-export default source; // Esporta l'array come valore predefinito
+// export default source; // Esporta l'array come valore predefinito

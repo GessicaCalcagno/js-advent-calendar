@@ -1,4 +1,5 @@
-import source from "./source.js";
+// import source from "./source.js";
+import { source } from './source.js';
 
 console.log(source);
 
